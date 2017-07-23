@@ -1,0 +1,15 @@
+#auther  xuyuan
+#get meinv url
+
+import requests
+import re
+import urllib
+
+for page in range(100,194):
+    html=requests.get("http://jandan.net/ooxx/page-%s#comments" %page).content
+
+    req=r'img src="//(.*?)"'
+    urlist=re.findall(req,html)
+    for url in urlist:
+        httpurl="http://"+url
+        urllib.urlretrieve(httpurl,'meinv/%s' %url.split("/")[-1])
