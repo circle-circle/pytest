@@ -1,0 +1,2 @@
+html.decode('gkb'，'ignore')    #将目标编码gbk 解码为unicode,遇上特殊字符可以添加ignore 参数忽略
+html.encode('utf-8')           #再将unicode 编码为utf-8
