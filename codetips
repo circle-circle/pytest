@@ -1,2 +1,52 @@
 html.decode('gkb'，'ignore')    #将目标编码gbk 解码为unicode,遇上特殊字符可以添加ignore 参数忽略
 html.encode('utf-8')           #再将unicode 编码为utf-8
+
+
+
+
+>>> import requests
+>>> dir(requests)
+['ConnectTimeout', 'ConnectionError', 'DependencyWarning', 'FileModeWarning', 'HTTPError', 'NullHandler', 'PreparedRequest',
+'ReadTimeout', 'Request', 'RequestException', 'RequestsDependencyWarning', 'Response', 'Session', 'Timeout', 'TooManyRedirects',
+'URLRequired', '__author__', '__author_email__', '__build__', '__builtins__', '__cake__', '__copyright__', '__description__', '__doc__',
+'__file__', '__license__', '__name__', '__package__', '__path__', '__title__', '__url__', '__version__', '_internal_utils',
+'adapters', 'api', 'auth', 'certs', 'chardet', 'check_compatibility', 'codes', 'compat', 'cookies', 'delete', 'exceptions',
+'get', 'head', 'hooks', 'logging', 'models', 'options', 'packages', 'patch','post', 'put', 'pyopenssl', 'request',
+'session', 'sessions', 'status_codes', 'structures', 'urllib3', 'utils', 'warnings']
+
+
+
+>>> import re
+>>> dir(re)
+['DEBUG', 'DOTALL', 'I', 'IGNORECASE', 'L', 'LOCALE', 'M', 'MULTILINE', 'S', 'Scanner', 'T', 'TEMPLATE', 'U', 'UNICODE', 'VERBOSE',
+'X', '_MAXCACHE', '__all__', '__builtins__', '__doc__', '__file__', '__name__', '__package__', '__version__', '_alphanum', '_cache',
+'_cache_repl', '_compile', '_compile_repl', '_expand', '_locale', '_pattern_type', '_pickle', '_subx', 'compile', 'copy_reg', 'error',
+'escape', 'findall', 'finditer', 'match', 'purge', 'search', 'split', 'sre_compile', 'sre_parse', 'sub', 'subn', 'sys', 'template']
+
+
+
+>>> from bs4 import BeautifulSoup
+>>> dir(BeautifulSoup)
+['ASCII_SPACES', 'DEFAULT_BUILDER_FEATURES', 'HTML_FORMATTERS', 'NO_PARSER_SPECIFIED_WARNING', 'ROOT_TAG_NAME', 'XML_FORMATTERS',
+ '__call__', '__class__', '__contains__', '__copy__', '__delattr__', '__delitem__', '__dict__', '__doc__', '__eq__', '__format__',
+ '__getattr__', '__getattribute__', '__getitem__', '__getstate__', '__hash__', '__init__', '__iter__', '__len__', '__module__',
+ '__ne__', '__new__', '__nonzero__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__',
+ '__str__', '__subclasshook__', '__unicode__', '__weakref__', '_all_strings', '_attr_value_as_string', '_attribute_checker',
+ '_check_markup_is_url', '_feed', '_find_all', '_find_one', '_formatter_for_name', '_is_xml', '_lastRecursiveChild',
+ '_last_descendant', '_popToTag', '_select_debug', '_selector_combinators', '_should_pretty_print', '_tag_name_matches_and',
+ 'append', 'attribselect_re', 'childGenerator', 'children', 'clear', 'decode', 'decode_contents', 'decompose', 'descendants',
+ 'encode', 'encode_contents', 'endData', 'extract', 'fetchNextSiblings', 'fetchParents', 'fetchPrevious', 'fetchPreviousSiblings',
+ 'find', 'findAll', 'findAllNext', 'findAllPrevious', 'findChild', 'findChildren', 'findNext', 'findNextSibling',
+ 'findNextSiblings', 'findParent', 'findParents', 'findPrevious', 'findPreviousSibling', 'findPreviousSiblings',
+ 'find_all', 'find_all_next', 'find_all_previous', 'find_next', 'find_next_sibling', 'find_next_siblings', 'find_parent',
+ 'find_parents', 'find_previous', 'find_previous_sibling', 'find_previous_siblings', 'format_string', 'get', 'getText',
+ 'get_attribute_list', 'get_text', 'handle_data', 'handle_endtag', 'handle_starttag', 'has_attr', 'has_key', 'index',
+ 'insert', 'insert_after', 'insert_before', 'isSelfClosing', 'is_empty_element', 'new_string', 'new_tag', 'next', 'nextGenerator',
+ 'nextSibling', 'nextSiblingGenerator', 'next_elements', 'next_siblings', 'object_was_parsed', 'parentGenerator', 'parents',
+ 'parserClass', 'popTag', 'prettify', 'previous', 'previousGenerator', 'previousSibling', 'previousSiblingGenerator',
+ 'previous_elements', 'previous_siblings', 'pushTag', 'quoted_colon', 'recursiveChildGenerator', 'renderContents',
+ 'replaceWith', 'replaceWithChildren', 'replace_with', 'replace_with_children', 'reset', 'select', 'select_one',
+ 'setup', 'string', 'strings', 'stripped_strings', 'tag_name_re', 'text', 'unwrap', 'wrap']
+
+
+
